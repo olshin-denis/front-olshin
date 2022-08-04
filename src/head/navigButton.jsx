@@ -40,7 +40,7 @@ const NavigButton = ({name}) => {
             <div>
                 <button onClick={click} className={`${classes.ctr} ${!active && classes.Active}`}>
                     {name}
-                    <img src={ctr} alt="#"/>
+                    <img srcSet={ctr} alt="#"/>
                 </button>
                 <div className={`${classes.ch}`}>
                     {

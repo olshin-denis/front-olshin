@@ -7,7 +7,7 @@ const Data = ({url, id, albumId, title}) => {
             <div className={classes.box}>
                 <div className={classes.boxIn}>
                     <div className={`${classes.flexCob}`}>
-                        <img src={`${url}`} alt="#"/>
+                        <img srcSet={`${url}`} alt="#"/>
                     </div>
                 </div>
                 <div className={`${classes.textStyle}`}>

@@ -35,7 +35,7 @@ function App() {
                 <form className={`${classes.form}`} /*onSubmit={}*/>
                     <input className={`${classes.input}`} type="text"/>
                     <button className={`${classes.lupa}`} type="submit">
-                        <img src={lupa} alt="#"/>
+                        <img srcSet={lupa} alt="#"/>
                     </button>
                 </form>
             </div>
