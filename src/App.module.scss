@@ -1,0 +1,134 @@
+@import "style/nullStyle";
+@import "style/text-style/lobster/lobster";
+
+body{
+  background-color: #ece9e9;
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-family: "Lobster-Regular";
+  font-size: 3rem;
+  line-height: 1rem;
+  margin: 2rem 2rem 2rem 0;
+  text-shadow: 8px 3px 0 rgba(202, 150, 150, 0.47);
+  //text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 0 0 ;
+}
+
+.input{
+  height: 1.3rem;
+  padding: 0.5rem;
+  width: 8rem;
+  border-radius: 1.5rem;
+  //background: gray;
+  //border: 0.1rem solid #423e4d;
+}
+
+.lupa{
+  margin: 0.2rem;
+  background-color: #ece9e9;
+}
+
+.lupa img{
+  width: 1rem;
+  height: 1rem;
+
+}
+
+hr{
+  //margin: 20px 0;
+  padding: 0;
+  height: 0.5rem;
+  border: none;
+  border-top: 0.1rem solid #333;
+  box-shadow: 0 3rem 3rem -3rem #8c8b8b inset;
+}
+
+@media(max-width: 769px){
+  .head{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #ece9e9;
+    border: 0.1rem solid #333;
+    //box-shadow: 0 3rem 3rem -3rem #8c8b8b inset;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(50, 50, 50, 0.75);
+
+  }
+  .burger{
+    display: flex;
+    position: relative;
+    width: 2.5rem;
+    height: 1rem;
+    left: -2rem;
+    //z-index: 1001;
+  }
+  .burger span{
+    position: absolute;
+    background-color: #030303;
+    left: 0;
+    width: 100%;
+    height: 0.3rem;
+    top: 0.7rem;
+    border-radius: 3rem;
+  }
+  .burger:before,
+  .burger:after{
+    content:'';
+    background-color: #030303;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 3rem;
+  }
+  .burger:before{
+    height: 0.25rem;
+    top: 0;
+  }
+  .burger:after{
+    bottom: 0;
+    top: 1.4rem;
+  }
+
+
+  .burger.Open:before{
+    transform: rotate(45deg);
+    top:0.6rem;
+    height: 0.3rem;
+    transition: 0.5s;
+  }
+
+  .burger.Open:after{
+    transform: rotate(-45deg);
+    //bottom: 9px;
+    top: 0.7rem;
+    transition: 0.5s;
+  }
+  .burger.Open span{
+    display: none;
+  }
+}
+
+@media(max-width: 426px){
+  .title{
+    font-size: 2rem;
+  }
+  .burger{
+    left: 0.5rem;
+  }
+}

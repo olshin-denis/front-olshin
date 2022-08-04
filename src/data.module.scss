@@ -1,0 +1,188 @@
+@import "App.module";
+
+.flexStyle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin: 3rem 0 3rem 0;
+  padding: 0 0 10rem 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 30rem;
+  height: 28rem;
+  //border: solid 0.1rem black;
+  position: relative;
+
+  margin-top: 10px;
+
+  .boxIn {
+    width: 30rem;
+    height: 20rem;
+    //border: solid 0.1rem black;
+    position: relative;
+  }
+}
+
+
+.flexCob {
+  width: 25rem;
+  height: 17rem;
+  //border: solid 0.1rem black;
+  overflow: hidden;
+  margin: 30px;
+  flex-shrink: 0;
+  transition: all 0.4s;
+
+  &:hover {
+    position: relative;
+    width: 29rem;
+    height: 21rem;
+    z-index: 1;
+    transition: all 0.4s;
+    margin: 30px;
+  }
+}
+
+.flexCob img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: 990;
+}
+
+
+.textStyle {
+  font-family: "LobsterTwo-Italic";
+  font-size: 1.3em;
+  line-height: 1rem;
+  margin: 0 0 0 2rem;
+}
+
+.textPosition {
+  padding-top: 0.3rem;
+}
+
+@media(max-width: 769px){
+  .flexStyle {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: -1rem 0 3rem 0;
+    padding: 0 0 10rem 0;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 25rem;
+    height: 28rem;
+    //border: solid 0.1rem black;
+    //position: relative;
+    margin: 10px 15px 0 0;
+
+    .boxIn {
+      width: 25rem;
+      height: 20rem;
+      //border: solid 0.1rem black;
+      position: relative;
+    }
+  }
+  .flexCob {
+    width: 25rem;
+    height: 17rem;
+    //border: solid 0.1rem black;
+    overflow: hidden;
+    //padding: 0 0 0 -10rem;
+    //margin: 3.5rem ;
+    flex-shrink: 0;
+    transition: all 0.4s;
+
+    &:hover {
+      position: relative;
+      width: 26rem;
+      height: 21rem;
+      z-index: 1;
+      transition: all 0.4s;
+      margin: 30px;
+    }
+  }
+
+  .flexCob img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 990;
+  }
+
+  .textStyle {
+    font-family: "LobsterTwo-Italic";
+    font-size: 1.3em;
+    line-height: 1rem;
+    margin: 2rem 0 0 3.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .flexStyle {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: -1rem 0 3rem 0;
+    padding: 0 0 10rem 0;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 18rem;
+    height: 28rem;
+    //border: solid 0.1rem black;
+    //position: relative;
+    margin: 10px 15px 0 0;
+
+    .boxIn {
+      width: 25rem;
+      height: 20rem;
+      //border: solid 0.1rem black;
+      position: relative;
+    }
+  }
+  .flexCob {
+    width: 18rem;
+    height: 17rem;
+    //border: solid 0.1rem black;
+    overflow: hidden;
+    //padding: 0 0 0 -10rem;
+    //margin: 3.5rem ;
+    flex-shrink: 0;
+    transition: all 0.4s;
+
+    &:hover {
+      position: relative;
+      width: 20rem;
+      height: 19rem;
+      z-index: 1;
+      transition: all 0.4s;
+      margin: 30px;
+    }
+  }
+}

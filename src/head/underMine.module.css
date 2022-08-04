@@ -1,0 +1,19 @@
+.case{
+    display: flex;
+    flex-direction: row;
+    margin: 0.1rem 0 0.1rem 0;
+    font-size: 1rem;
+    background: white;
+    transition: 0.4s;
+}
+.case img{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 2px 0 0 0;
+}
+
+.case:hover{
+    margin: 0.1rem 0 0.1rem 0.3rem;
+    color: #8c8b8b;
+    transition: 0.4s;
+}
