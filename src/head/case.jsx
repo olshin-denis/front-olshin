@@ -6,7 +6,12 @@ import classes from "./underMine.module.css";
 const Case = ({number}) => {
     return (
         <button className={`${classes.case}`}>
-            {number} <img src={ctr} alt="#"/>
+            <div>
+                {number}
+            </div>
+            <div>
+                <img src={ctr} alt="#"/>
+            </div>
         </button>
     );
 };

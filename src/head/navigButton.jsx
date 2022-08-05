@@ -46,9 +46,9 @@ const NavigButton = ({name}) => {
                     {
                         !active &&
                         (
-                            <div>
+                            <>
                                 {open()}
-                            </div>
+                            </>
                         )
                     }
                 </div>

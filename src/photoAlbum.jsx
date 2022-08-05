@@ -7,7 +7,6 @@ const PhotoAlbum = () => {
     const [photos, setPhotos] = useState([]);
 
     useEffect(()=>{
-        // console.log('Что-то');
         postList();
         album()
     },[])
@@ -19,7 +18,6 @@ const PhotoAlbum = () => {
                 _page: page
             }
         })
-        // console.log(response.data)
         setPhotos(response.data)
     }
 

@@ -1,10 +1,12 @@
 .case{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 0.1rem 0 0.1rem 0;
     font-size: 1rem;
     background: white;
     transition: 0.4s;
+
 }
 .case img{
     width: 0.8rem;
@@ -16,4 +18,15 @@
     margin: 0.1rem 0 0.1rem 0.3rem;
     color: #8c8b8b;
     transition: 0.4s;
+}
+@media (min-width: 1440px) {
+    .case{
+        margin: 0.1rem 0 0.1rem 0;
+        font-size: 1.7rem;
+    }
+    .case img{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 2px 0 0 0;
+    }
 }

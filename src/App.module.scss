@@ -5,6 +5,8 @@ body{
   background-color: #ece9e9;
 }
 
+
+
 .head{
   display: flex;
   flex-direction: row;
@@ -130,5 +132,33 @@ hr{
   }
   .burger{
     left: 0.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .head{
+    height: 6rem;
+  }
+
+  .title{
+    font-size: 4rem;
+  }
+  .input{
+    height: 2rem;
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    //background: gray;
+    //border: 0.1rem solid #423e4d;
+  }
+  .lupa{
+    margin: 0.2rem;
+    background-color: #ece9e9;
+  }
+  .lupa img{
+    width: 1.5rem;
+    height: 1.5rem;
+
   }
 }

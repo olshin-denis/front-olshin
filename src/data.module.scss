@@ -84,10 +84,6 @@
   }
 
   .box {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
     width: 25rem;
     height: 28rem;
     //border: solid 0.1rem black;
@@ -112,7 +108,6 @@
     transition: all 0.4s;
 
     &:hover {
-      position: relative;
       width: 26rem;
       height: 21rem;
       z-index: 1;
@@ -139,20 +134,11 @@
 
 @media (max-width: 375px) {
   .flexStyle {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
-    flex-wrap: wrap;
-    margin: -1rem 0 3rem 0;
+    margin: -1rem 0 0 0;
     padding: 0 0 10rem 0;
   }
   .box {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
+
     width: 18rem;
     height: 28rem;
     //border: solid 0.1rem black;
@@ -163,7 +149,6 @@
       width: 25rem;
       height: 20rem;
       //border: solid 0.1rem black;
-      position: relative;
     }
   }
   .flexCob {
@@ -184,5 +169,46 @@
       transition: all 0.4s;
       margin: 30px;
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .box {
+    width: 50rem;
+    height: 30rem;
+    //border: solid 0.1rem black;
+    margin: 10px 0 3rem 5rem;
+    .boxIn {
+      position: absolute;
+      width: 40rem;
+      height: 25rem;
+      //border: solid 0.1rem black;
+    }
+  }
+  .flexCob {
+    width: 35rem;
+    height: 20rem;
+    //border: solid 0.1rem black;
+    margin: 30px;
+    flex-shrink: 0;
+    transition: all 0.4s;
+
+    &:hover {
+      width: 40rem;
+      height: 21rem;
+      z-index: 1;
+      transition: all 0.4s;
+      margin: 30px;
+    }
+  }
+  .textStyle {
+    font-size: 2rem;
+    line-height: 1rem;
+    margin: 23rem 0 0 2rem;
+  }
+
+  .textPosition {
+    padding: 1rem 0 0 0;
+    line-height: 2rem;
   }
 }

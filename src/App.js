@@ -23,8 +23,7 @@ function App() {
     }
 
     return (
-        <>
-            {/*{console.log(x)}*/}
+        <div className={`${classes.cab}`}>
             <div className={classes.head}>
                 <div onClick={handleToggle} className={`${classes.burger} ${(!isOpen && classes.Open)}`}>
                     <span></span>
@@ -42,7 +41,7 @@ function App() {
             <hr/>
             <Navigation x={x()} handleToggle={handleToggle}/>
             <PhotoAlbum/>
-        </>
+        </div>
     );
 }
 
